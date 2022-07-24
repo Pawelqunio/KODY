@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: lavenderblush;
+}
+
+#navbar {
+    background-color: darkcyan;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar > ol > li {
+    float: left;
+    word-spacing: 10px;
+    min-width: 50px;
+}

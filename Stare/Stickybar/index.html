@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    <link href="css/fontello.css" rel="stylesheet"/>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+        var NavY = $('.navbar').offset().top;
+        
+        var stickyNav = function(){
+        var ScrollY = $(window).scrollTop();
+            
+        if (ScrollY > NavY) { 
+            $('.navbar').addClass('sticky');
+        } else {
+            $('.navbar').removeClass('sticky'); 
+        }
+        };
+        
+        stickyNav();
+        
+        $(window).scroll(function() {
+            stickyNav();
+        });
+        });
+        
+    </script>
+
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="pad.png" style="float: left;"/>
+                <span style="color: #c34f4f;">retro</span>granie.com</div>
+                <div style="clear:both;"></div>
+        </div>
+
+        <div class="navbar">
+            <ol>
+                <li><a href="#">Strona główna</a></li> 
+                <li><a href="#">Klasyki NES</a>
+                    <ul>
+                        <li><a href="#">Contra</a></li>
+                        <li><a href="#">Mario Bros</a></li>
+                        <li><a href="#">Duck Tales</a></li>
+                        <li><a href="#">Legend of Zelda</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">Gry filmowe</a>
+                    <ul>
+                        <li><a href="#">Home Alone</a></li>
+                        <li><a href="#">Dick Tracy</a></li>
+                        <li><a href="#">The Simpsons</a></li>
+                        <li><a href="#">Top Gun</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">Bijatyki</a>
+                    <ul>
+                        <li><a href="#">Mortal Kombat</a></li>
+                        <li><a href="#">Nekketsu K.D.</a></li>
+                        <li><a href="#">Double Dragon</a></li>
+                        <li><a href="#">Turtles T.</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">Gry sportowe</a>
+                    <ul>
+                        <li><a href="#">Goal 3</a></li>
+                        <li><a href="#">Excitebike</a></li>
+                        <li><a href="#">Ike Ike Hockey</a></li>
+                        <li><a href="#">Tennis</a></li>
+                    </ul>
+                </li> 
+                <li><a href="#">O autorach</a></li> 
+                <div style="clear:both"></div>
+            </ol>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor ipsum, interdum ut eros sed, lobortis placerat felis. Etiam id laoreet lacus. Duis semper dolor ac urna finibus, nec feugiat lectus finibus. Vestibulum dignissim consectetur magna ut efficitur. Duis sit amet magna dolor. Cras euismod, arcu vel vehicula placerat, ex risus ornare lectus, id commodo enim sem ac nibh. Phasellus aliquet enim at massa posuere tempor. Sed et nulla pellentesque, pellentesque nibh sodales, sodales felis. Etiam at mollis velit.</p>
+            <p>Aliquam et mauris nisl. Sed sollicitudin pulvinar nisl quis mollis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et tempor nunc, et varius dolor. Duis et mattis urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nulla velit, semper a neque ac, auctor porta diam. Suspendisse potenti. Fusce tortor tellus, tempus vel molestie quis, varius eu massa. Aliquam rutrum, dolor nec pretium hendrerit, ante nisl fringilla justo, vitae commodo dui nunc a velit. Aliquam non mauris sagittis tellus placerat efficitur in eu diam. Nunc convallis sagittis tortor, nec sodales libero ultrices nec.</p>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In gravida id ipsum rhoncus efficitur. Fusce sed aliquet libero. Cras aliquet ut sem at accumsan. Etiam eget feugiat elit. Nullam iaculis ullamcorper nisi, eu aliquam massa dapibus nec. Etiam nunc turpis, molestie vel purus nec, aliquet laoreet lectus. Fusce sodales convallis feugiat. Vestibulum et ultrices leo, sed tempor enim. Aliquam eget tempus sem. Vestibulum egestas leo pulvinar urna semper congue. Aliquam eget dictum urna, sit amet vehicula lorem. Sed fermentum, enim eu iaculis consequat, enim lorem rhoncus dolor, in feugiat felis augue in urna. Morbi quis ante diam. Duis maximus non nulla vel imperdiet. Quisque ultrices lectus nec ipsum consectetur, in facilisis nibh egestas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin nulla mi, finibus fringilla mauris condimentum sed. Nulla facilisi. Ut ullamcorper diam libero, et ullamcorper massa suscipit sit amet. Proin sodales erat dictum mauris semper, a dictum turpis ultricies. Duis vitae luctus enim. Sed porttitor lacus et lectus vulputate, non eleifend velit aliquam.</p>
+            <p>Aliquam erat volutpat. Aenean a pharetra libero. Curabitur non purus ac turpis vestibulum malesuada et eget mi. Donec libero eros, volutpat in magna commodo, aliquet volutpat neque. Sed placerat congue elit, vel ullamcorper nisi ornare eget. Sed in luctus urna. Donec sed est egestas, ullamcorper lectus sit amet, aliquet quam. Fusce pellentesque aliquam egestas. Quisque in dui cursus arcu pretium cursus porttitor id lacus. Vestibulum non pulvinar justo. Cras dignissim laoreet diam eu euismod. Vestibulum semper mattis arcu id finibus. Sed hendrerit, nibh eget elementum sodales, elit lorem egestas leo, eu mollis quam erat id nulla. Nulla facilisi. Fusce nulla nunc, facilisis quis placerat sed, venenatis ac est. Pellentesque eu augue orci.</p>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In gravida id ipsum rhoncus efficitur. Fusce sed aliquet libero. Cras aliquet ut sem at accumsan. Etiam eget feugiat elit. Nullam iaculis ullamcorper nisi, eu aliquam massa dapibus nec. Etiam nunc turpis, molestie vel purus nec, aliquet laoreet lectus. Fusce sodales convallis feugiat. Vestibulum et ultrices leo, sed tempor enim. Aliquam eget tempus sem. Vestibulum egestas leo pulvinar urna semper congue. Aliquam eget dictum urna, sit amet vehicula lorem. Sed fermentum, enim eu iaculis consequat, enim lorem rhoncus dolor, in feugiat felis augue in urna. Morbi quis ante diam. Duis maximus non nulla vel imperdiet. Quisque ultrices lectus nec ipsum consectetur, in facilisis nibh egestas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin nulla mi, finibus fringilla mauris condimentum sed. Nulla facilisi. Ut ullamcorper diam libero, et ullamcorper massa suscipit sit amet. Proin sodales erat dictum mauris semper, a dictum turpis ultricies. Duis vitae luctus enim. Sed porttitor lacus et lectus vulputate, non eleifend velit aliquam.</p>
+            <p>Aliquam erat volutpat. Aenean a pharetra libero. Curabitur non purus ac turpis vestibulum malesuada et eget mi. Donec libero eros, volutpat in magna commodo, aliquet volutpat neque. Sed placerat congue elit, vel ullamcorper nisi ornare eget. Sed in luctus urna. Donec sed est egestas, ullamcorper lectus sit amet, aliquet quam. Fusce pellentesque aliquam egestas. Quisque in dui cursus arcu pretium cursus porttitor id lacus. Vestibulum non pulvinar justo. Cras dignissim laoreet diam eu euismod. Vestibulum semper mattis arcu id finibus. Sed hendrerit, nibh eget elementum sodales, elit lorem egestas leo, eu mollis quam erat id nulla. Nulla facilisi. Fusce nulla nunc, facilisis quis placerat sed, venenatis ac est. Pellentesque eu augue orci.</p>
+            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In gravida id ipsum rhoncus efficitur. Fusce sed aliquet libero. Cras aliquet ut sem at accumsan. Etiam eget feugiat elit. Nullam iaculis ullamcorper nisi, eu aliquam massa dapibus nec. Etiam nunc turpis, molestie vel purus nec, aliquet laoreet lectus. Fusce sodales convallis feugiat. Vestibulum et ultrices leo, sed tempor enim. Aliquam eget tempus sem. Vestibulum egestas leo pulvinar urna semper congue. Aliquam eget dictum urna, sit amet vehicula lorem. Sed fermentum, enim eu iaculis consequat, enim lorem rhoncus dolor, in feugiat felis augue in urna. Morbi quis ante diam. Duis maximus non nulla vel imperdiet. Quisque ultrices lectus nec ipsum consectetur, in facilisis nibh egestas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin nulla mi, finibus fringilla mauris condimentum sed. Nulla facilisi. Ut ullamcorper diam libero, et ullamcorper massa suscipit sit amet. Proin sodales erat dictum mauris semper, a dictum turpis ultricies. Duis vitae luctus enim. Sed porttitor lacus et lectus vulputate, non eleifend velit aliquam.</p>
+            <p>Aliquam erat volutpat. Aenean a pharetra libero. Curabitur non purus ac turpis vestibulum malesuada et eget mi. Donec libero eros, volutpat in magna commodo, aliquet volutpat neque. Sed placerat congue elit, vel ullamcorper nisi ornare eget. Sed in luctus urna. Donec sed est egestas, ullamcorper lectus sit amet, aliquet quam. Fusce pellentesque aliquam egestas. Quisque in dui cursus arcu pretium cursus porttitor id lacus. Vestibulum non pulvinar justo. Cras dignissim laoreet diam eu euismod. Vestibulum semper mattis arcu id finibus. Sed hendrerit, nibh eget elementum sodales, elit lorem egestas leo, eu mollis quam erat id nulla. Nulla facilisi. Fusce nulla nunc, facilisis quis placerat sed, venenatis ac est. Pellentesque eu augue orci.</p>
+        </div>
+        <div class="socials">
+            <div class="socialdivs">
+                <div class="fb" >
+                    <a href="http://wwww.facebook.pl" target="_blank" class="tilelink">
+                    <i class="icon-facebook"></i></a></div>
+                <div class="yt">
+                    <a href="https://wwww.facebook.pl" target="_blank" class="tilelink">
+                    <i class="icon-youtube"></i></a></div>
+                <div class="tw">
+                    <a href="https://wwww.facebook.pl" target="_blank" class="tilelink">
+                    <i class="icon-twitter"></i></a></div>
+                <div class="gplus">
+                    <a href="https://wwww.facebook.pl" target="_blank" class="tilelink">
+                    <i class="icon-gplus"></i></a></div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div class="footer">
+            2021 Projekt nauki &copy; Wszelkie prawa zastrzeżone.
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
